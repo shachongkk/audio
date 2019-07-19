@@ -23,7 +23,7 @@ public class indexController {
 	@RequestMapping("methodTwo")
 	@ResponseBody
 	public String methodTwo(){
-		return "method two";
+		return "hehehe";
 	}
 	
 }
