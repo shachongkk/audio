@@ -19,5 +19,11 @@ public class indexController {
 	public String getIndex(){
 		return "this is my first jenkins project";
 	}
+		
+	@RequestMapping("methodTwo")
+	@ResponseBody
+	public String methodTwo(){
+		return "method two";
+	}
 	
 }
