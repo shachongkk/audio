@@ -26,4 +26,9 @@ public class indexController {
 		return "hehehe";
 	}
 	
+	@RequestMapping("methodThree")
+	@ResponseBody
+	public String methodThree(){
+		return "methos three";
+	}
 }
