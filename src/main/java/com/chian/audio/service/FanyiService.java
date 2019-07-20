@@ -7,7 +7,7 @@ public interface FanyiService {
 
 	public String add(String chinaWords,String english,String chinaContent,String englishContent,String audioAddress);
 	
-	public Map search(String chinaWords);
+	public Map<String,Object> search(String chinaWords);
 	
 	public List<Map<String,Object>> selectAllFanyi();
 	

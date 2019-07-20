@@ -17,7 +17,7 @@ public class FanyiServiceImpl implements FanyiService {
 	
 	@Override
 	public String add(String chinaWords, String english,String chinaContent,String englishContent,String audioAddress) {
-		HashMap map = new HashMap();
+		Map<String,Object> map = new HashMap<>();
 		if(chinaWords == null || audioAddress == null){
 			return null;
 		}
@@ -39,11 +39,12 @@ public class FanyiServiceImpl implements FanyiService {
 	}
 	
 
+	@SuppressWarnings("unchecked")
 	@Override
-	public Map search(String chinaWords) {
-		Map map = null;
+	public Map<String,Object> search(String chinaWords) {
+		Map<String,Object> map = null;
 		try {
-			map = (Map)baseDao.selectOne("FanyiMapper.searchFanyi", chinaWords);
+			map = (Map<String,Object>)baseDao.selectOne("FanyiMapper.searchFanyi", chinaWords);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -51,6 +52,7 @@ public class FanyiServiceImpl implements FanyiService {
 		return map;
 	}
 
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@Override
 	public List<Map<String,Object>> selectAllFanyi() {
 		
@@ -79,6 +81,7 @@ public class FanyiServiceImpl implements FanyiService {
 	}
 
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public Map<String,Object> selectById(int id) {
 		
