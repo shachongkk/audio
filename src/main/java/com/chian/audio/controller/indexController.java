@@ -31,4 +31,11 @@ public class indexController {
 	public String methodThree(){
 		return "methos three";
 	}
+	
+	@RequestMapping("methodFour")
+	@ResponseBody
+	public String methodFour(){
+		return "methos four";
+	}
+	
 }
