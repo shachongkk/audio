@@ -25,3 +25,9 @@ mybatis:
   
 springbootdo:
   uploadPath: D:/var/uploaded_files/
+
+server: 
+  max-http-header-size: 100000
+  port: 9999
+  servlet:
+    context-path: /audio

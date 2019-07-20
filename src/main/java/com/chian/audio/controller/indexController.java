@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @RequestMapping("/")
 public class indexController {
 
-	@RequestMapping("/")
+	@RequestMapping("index")
 	public String index(){
 		System.out.println("come here");
 		return "fan";
