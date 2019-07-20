@@ -80,7 +80,6 @@ public class FanyiController {
 	
 	
 	@RequestMapping("search")
-	@SuppressWarnings("unchecked")
 	public void search(String chinaWords,HttpServletRequest req,HttpServletResponse res){
 		Map<String,Object> map = fanyiService.search(chinaWords);
 		JSONObject mapObj = JSONObject.fromObject(map);
