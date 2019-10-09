@@ -37,5 +37,11 @@ public class indexController {
 	public String methodFour(){
 		return "hahaha";
 	}
+
+	@RequestMapping("testCase")
+	@ResponseBody
+	public String testCase(){
+		return "test case";
+	}
 	
 }
